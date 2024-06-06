@@ -3,6 +3,8 @@
 #### Opis
 Projekt ten skupia się na analizie danych i dopasowaniu modeli statystycznych do zbiorów danych, wykorzystując różne podejścia modelowania.
 
+Opracowane na podstawie książki Williams, H. P. (2013). Model building in mathematical programming. John Wiley & Sons.
+
 #### Struktura plików
 - **data.dat**: Zawiera dane wejściowe wykorzystywane przez modele. Dane mogą zawierać informacje o wymiarach materiałów, kosztach itp.
 - **model_1.mod**, **model_2.mod**, **model_3.mod**, **model_4.mod**: Pliki te zawierają różne modele optymalizacyjne. Każdy z nich może być skonfigurowany do rozwiązania specyficznych problemów w ramach projektu. Modele mogą się różnić parametrami lub metodami optymalizacji.
