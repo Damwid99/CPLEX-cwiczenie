@@ -57,12 +57,12 @@ Opracowane na podstawie książki Williams, H. P. (2013). Model building in math
 
 - **line_fitting.cpp**: Plik źródłowy w języku C++, który inicjuje środowisko do uruchomienia modeli optymalizacji. Kod ten ładuje model (`model_1.mod`) oraz dane (`data.dat`), wykonuje modelowanie przy użyciu solvera CPLEX, i prezentuje wyniki. Obsługuje wyjątki i błędy podczas wykonywania, dając informacje zwrotne o stanie wykonania. Aby uruchomić inny model niż `model_1.mod`, należy zmienić ścieżkę w linii kodu odpowiedzialnej za ładowanie modelu. Znajduje się ona w fragmencie:
   ```c++
-  IloOplModelSource modelSource(env, DATADIR "cutstock" DIRSEP "model_1.mod");
+  IloOplModelSource modelSource(env, "..\\cplex\\model_4.mod");
   ```
   Można zmienić `"model_1.mod"` na nazwę innego pliku modelu, na przykład `"model_2.mod"`, `"model_3.mod"` lub `"model_4.mod"`.
   
 
 #### Wymagania
-- CPLEX Optimization Studio
-- Kompilator C++, który obsługuje biblioteki CPLEX
-- System operacyjny Windows lub UNIX/Linux z odpowiednimi ścieżkami dostępu do plików
+- CPLEX 22.1 Optimization Studio
+- Visual Studio 22
+- System operacyjny Windows 10 lub 11
